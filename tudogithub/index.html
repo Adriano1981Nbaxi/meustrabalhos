@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Adriano Sebastião João — Portfólio</title>
+  <style>
+    :root{
+      --bg:#0f172a; --card:#0f172a00; --panel:#0f172a; --card2:#0b1220; --accent:#06b6d4; --text:#e6eef6;
+      --muted: #9fb0bf;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: linear-gradient(180deg,var(--bg),#071126);
+      color:var(--text); padding:28px;
+    }
+    .wrap{max-width:980px;margin:0 auto;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:14px;padding:26px;box-shadow:0 10px 40px rgba(0,0,0,.6);}
+    header{display:flex;gap:20px;align-items:center}
+    .foto{width:140px;height:140px;border-radius:12px;overflow:hidden;flex:0 0 140px;background:linear-gradient(135deg,#0b1220,#071126);display:flex;align-items:center;justify-content:center}
+    .foto img{width:100%;height:100%;object-fit:cover;display:block}
+    .meta h1{color:var(--accent);font-size:1.7rem;margin-bottom:6px}
+    .meta p{color:var(--muted);margin-bottom:6px}
+    .columns{display:grid;grid-template-columns:1fr 340px;gap:20px;margin-top:18px}
+    .card{background:rgba(255,255,255,0.02);padding:16px;border-radius:10px}
+    h2{color:var(--accent);margin-bottom:10px}
+    ul{margin-left:18px}
+    li{margin-bottom:8px;color:var(--text)}
+    .links{display:grid;gap:10px}
+    .links a{display:block;background:linear-gradient(90deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));padding:12px;border-radius:8px;text-decoration:none;color:var(--text);font-weight:600;text-align:center;transition:transform .13s ease,box-shadow .13s ease}
+    .links a:hover{transform:translateY(-4px);box-shadow:0 10px 30px rgba(2,6,23,.6)}
+    .small{font-size:.9rem;color:var(--muted)}
+    .contact{font-weight:600;color:var(--text)}
+    footer{text-align:center;margin-top:18px;color:var(--muted);font-size:.9rem}
+    pre.cv{white-space:pre-wrap;font-family:inherit;color:var(--text);line-height:1.45}
+    @media(max-width:880px){ .columns{grid-template-columns:1fr; } .foto{width:110px;height:110px;flex:0 0 110px} }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="foto">
+        <!-- Substitui foto.jpg pela tua imagem no repositório -->
+        <img src="foto.jpg" alt="Foto Adriano Sebastião João" onerror="this.style.display='none'">
+      </div>
+      <div class="meta">
+        <h1>Adriano Sebastião João</h1>
+        <p class="small"><strong>Localidade:</strong> Luanda &nbsp; • &nbsp;<strong>Data de Nascimento:</strong> 1981</p>
+        <p class="small"><strong>Telefones:</strong> <span class="contact">+244 956 759 543 / +244 922 118 624</span></p>
+        <p class="small"><strong>E-mail:</strong> <a href="mailto:adrianojoaoa459@gmail.com" style="color:var(--accent);text-decoration:none">adrianojoaoa459@gmail.com</a></p>
+        <p class="small"><strong>BI:</strong> 000051694LA019 &nbsp; • &nbsp;<strong>Carta:</strong> 24-06-2005</p>
+      </div>
+    </header>
+
+    <div class="columns">
+      <div>
+        <section class="card">
+          <h2>Resumo Profissional</h2>
+          <p class="small">Profissional com experiência em logística e autodidata em desenvolvimento de software, com forte base técnica em operações de armazém, controlo de stock e automação. Habilidade comprovada na criação de sistemas de faturação e gestão de inventário utilizando Python e Excel. Conhecimentos práticos em eletrónica e optimização de processos para ambientes de distribuição. Capacidade de apoiar operações logísticas ao mesmo tempo em que desenvolve ferramentas internas que aumentam a eficiência.</p>
+        </section>
+
+        <section class="card" style="margin-top:12px">
+          <h2>Competências Principais</h2>
+          <ul>
+            <li>Operações logísticas e de armazém</li>
+            <li>Controlo de stock e inventário</li>
+            <li>Automação com Excel (VBA / macros)</li>
+            <li>Desenvolvimento de ferramentas com Python</li>
+            <li>Automação com sensores e Arduino</li>
+            <li>Análise de dados com Excel, SQL e Power BI</li>
+            <li>Ferramentas web: HTML, CSS, WordPress, Streamlit</li>
+          </ul>
+        </section>
+
+        <section class="card" style="margin-top:12px">
+          <h2>Experiência Profissional</h2>
+          <ul>
+            <li>2 anos como Auxiliar de Logística (Importação/Exportação)</li>
+            <li>5 anos na gestão de feiras e mercados (Fiscal de feira)</li>
+            <li>Mais de 8 anos no setor de transportes (táxi e distribuição de mercadorias)</li>
+            <li>6 meses desenvolvendo sistemas próprios de controlo de stock</li>
+            <li>6 meses construindo sistemas de automação com Arduino</li>
+            <li>2 meses desenvolvendo um sistema de faturação (Python + Excel, em andamento)</li>
+          </ul>
+        </section>
+
+        <section class="card" style="margin-top:12px">
+          <h2>Formação & Certificações</h2>
+          <ul>
+            <li>Ensino Médio concluído em Ciências Económico-Jurídicas</li>
+            <li>1º ano de Sociologia – ISCED Luanda (2018, período noturno, não concluído)</li>
+            <li>Certificações: Técnico de Logística (CINFOTEC); Programador de Software (CINFOTEC); Eletricista Auto e Civil</li>
+          </ul>
+        </section>
+
+        <section class="card" style="margin-top:12px">
+          <h2>Projetos Relevantes</h2>
+          <p class="small"><strong>Sistema de Faturação e Controlo de Estoque:</strong> desenvolvido com Python, Flet e Excel (MySQL / SQLite).</p>
+          <p class="small"><strong>Sistema de Controlo de Entrada e Saída de Viaturas:</strong> aplicação feitas com Python + Excel VBA.</p>
+          <p class="small"><strong>Projetos de Automação com Arduino:</strong> soluções com sensores, leitores biométricos e comandos remotos.</p>
+        </section>
+
+        <section class="card" style="margin-top:12px">
+          <h2>Informações Adicionais</h2>
+          <ul>
+            <li>Casado desde 2002</li>
+            <li>Rápida capacidade de aprendizagem e resolução de problemas</li>
+            <li>Foco em desenvolver soluções tecnológicas para o sector de logística e serviços</li>
+          </ul>
+        </section>
+      </div>
+
+      <aside>
+        <div class="card">
+          <h2>Projetos / Links</h2>
+          <div id="links" class="links small">
+            <!-- Carregado via links.json -->
+            <p class="small">A carregar links...</p>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <h2>Contacto Rápido</h2>
+          <p class="small"><strong>Telefone:</strong><br> +244 956 759 543<br> +244 922 118 624</p>
+          <p class="small"><strong>Email:</strong><br> <a href="mailto:adrianojoaoa459@gmail.com" style="color:var(--accent);text-decoration:none">adrianojoaoa459@gmail.com</a></p>
+        </div>
+      </aside>
+    </div>
+
+    <footer>© 2025 — Adriano Sebastião João</footer>
+  </div>
+
+  <script>
+    // Carrega links.json dinamicamente
+    async function loadLinks(){
+      try{
+        const resp = await fetch('links.json', {cache: "no-store"});
+        if(!resp.ok) throw new Error('HTTP ' + resp.status);
+        const data = await resp.json();
+        const container = document.getElementById('links');
+        container.innerHTML = '';
+        data.forEach(item => {
+          const a = document.createElement('a');
+          a.href = item.url;
+          a.target = '_blank';
+          a.rel = 'noopener noreferrer';
+          a.textContent = item.name;
+          a.title = item.url;
+          container.appendChild(a);
+        });
+      }catch(err){
+        console.error(err);
+        const container = document.getElementById('links');
+        container.innerHTML = '<p class="small">Não foi possível carregar os links. Certifique-se de que <code>links.json</code> está no mesmo diretório e é válido.</p>';
+      }
+    }
+    loadLinks();
+  </script>
+</body>
+</html>
